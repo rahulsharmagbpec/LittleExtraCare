@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--
+        <com.google.android.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:apiKey="AIzaSyByaUA9DbEXEP9-YuxlfKOpnVmZS0Yuz1s"
+            />-->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout" />
+
+    <!--<com.google.android.gms.maps.MapView
+        android:id="@+id/trackMap"
+        android:layout_height="match_parent"
+        tools:context="littleextracare.bifortis.com.activities.MapsActivity"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linearLayout">
+
+    </com.google.android.gms.maps.MapView>-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:layout_margin="6dp"
+            android:src="@drawable/chat"
+            android:background="@color/myBlue"
+            android:layout_weight="1"
+            android:id="@+id/button8" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:layout_margin="6dp"
+            android:src="@drawable/phone"
+            android:background="@color/myBlue"
+            android:layout_weight="1"
+            android:id="@+id/button9" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/myRed"
+            android:id="@+id/btnStart"
+            tools:ignore="ButtonOrder" />
+    </LinearLayout>
+
+</RelativeLayout>

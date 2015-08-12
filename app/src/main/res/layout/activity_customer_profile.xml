@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="littleextracare.bifortis.com.activities.CustomerProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        android:id="@+id/profile_image3"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:src="@drawable/wallpaper"
+        app:border_width="2dp"
+        app:border_color="@color/myBlue"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Emily Rose"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/profile_image3"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView8"
+        android:layout_height= "2dp"
+        android:background="@color/myBlue" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon1"
+            android:layout_weight="1"
+            android:src="@drawable/heart_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon2"
+            android:layout_weight="1"
+            android:src="@drawable/edu_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon3"
+            android:layout_weight="1"
+            android:src="@drawable/finger_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon4"
+            android:layout_weight="1"
+            android:src="@drawable/car_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon5"
+            android:layout_weight="1"
+            android:src="@drawable/dog_gray"
+            android:layout_below="@+id/scrollView3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+        android:id="@+id/textView9"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/linearLayoutIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/SplitLine_hor2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView9"
+        android:layout_height= "2dp"
+        android:background="@color/myBlue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Payment Method"
+        android:layout_margin="12dp"
+        android:textColor="@color/myBlue"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/SplitLine_hor2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/SplitLine_hor3"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView10"
+        android:layout_height= "2dp"
+        android:background="@color/myBlue" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:background="@color/myBlue"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/button16"
+        android:onClick="editButtonClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

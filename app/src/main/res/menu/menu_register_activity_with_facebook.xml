@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="littleextracare.bifortis.com.activities.RegisterActivityWithFacebook">
+
+    <item
+        android:id="@+id/action_next"
+        app:showAsAction="always"
+        android:title="@string/action_next">
+    </item>
+</menu>

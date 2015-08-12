@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Space android:id="@+id/dummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+
+<!--<fragment
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="littleextracare.bifortis.com.activities.MapsActivity"
+    android:layout_width="match_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />-->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_height="match_parent"
+        tools:context="littleextracare.bifortis.com.activities.MapsActivity"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/slider_layout">
+    </com.google.android.gms.maps.MapView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/btnRequest"
+            android:layout_margin="10dp"
+            android:background="@color/myBlue"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/dummy"
+            android:layout_toStartOf="@+id/dummy" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Later"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/btnBook"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@color/myBlue"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/dummy"
+            android:layout_toEndOf="@+id/dummy" />
+
+    <RelativeLayout
+        android:id="@+id/slider_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@color/myBlue"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <littleextracare.bifortis.com.SliderSelector
+            android:id="@+id/slider_selector"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/myBlue"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

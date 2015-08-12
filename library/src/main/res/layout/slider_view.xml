@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/tray_layout"
+    android:layout_height="match_parent"
+    android:background="@drawable/tray"
+    android:padding="0dp"
+    >
+
+    <View
+        android:id="@+id/slider_view"
+        android:layout_width="@dimen/slider_button"
+        android:layout_height="match_parent"
+        android:background="@drawable/slider"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/labels_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/bar_textview"-->
+        <!--style="@style/SliderButton"-->
+        <!--android:text="@string/bar"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:textColor="@color/lyft_orange"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/bistro_textview"-->
+        <!--style="@style/SliderButton"-->
+        <!--android:text="@string/bistro"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/cafe_textview"-->
+        <!--style="@style/SliderButton"-->
+        <!--android:text="@string/cafe"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--/>-->
+
+
+</RelativeLayout>

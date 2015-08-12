@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="littleextracare.bifortis.com.activities.CompleteCareGiverProfile">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon1"
+            android:layout_weight="1"
+            android:src="@drawable/heart_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon2"
+            android:layout_weight="1"
+            android:src="@drawable/edu_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon3"
+            android:layout_weight="1"
+            android:src="@drawable/finger_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon4"
+            android:layout_weight="1"
+            android:src="@drawable/car_gray"
+            android:layout_below="@+id/scrollView3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageIcon5"
+            android:layout_weight="1"
+            android:src="@drawable/dog_gray"
+            android:layout_below="@+id/scrollView3" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText18"
+        android:maxLines="3"
+        android:minLines="2"
+        android:layout_marginTop="35dp"
+        android:hint="@string/edittext_description"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayoutIcon"
+        android:layout_alignLeft="@+id/linearLayoutIcon"
+        android:layout_alignStart="@+id/linearLayoutIcon"
+        android:layout_alignRight="@+id/linearLayoutIcon"
+        android:layout_alignEnd="@+id/linearLayoutIcon" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:background="@color/myBlue"
+        android:textColor="@color/white"
+        android:id="@+id/button19"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

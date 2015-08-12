@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="littleextracare.bifortis.com.activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:visibility="gone"
+                facebook:preset_size="normal">
+                </com.facebook.login.widget.ProfilePictureView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageViewNormal"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:src="@drawable/profile_icon"
+                app:border_width="2dp"
+                android:layout_gravity="center_horizontal"
+                app:border_color="@color/myBlue" />
+
+            <!--<ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageView2"
+                android:visibility="gone"
+                android:src="@drawable/profile_icon" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText5"
+                    android:hint="@string/edittext_name"
+                    android:textColor="@color/textColor"
+                    android:lines="1"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/editText4"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/edittext_lastname"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:id="@+id/editTextEmail"
+                android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
+                android:hint="E-mail"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:textColor="@color/textColor"
+                android:singleLine="true"
+                android:hint="@string/edittext_description"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:ems="10"
+                android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
+                android:hint="Street Address"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/textColor"
+                    android:ems="10"
+                    android:minLines="1"
+                    android:lines="1"
+                    android:hint="@string/edittext_city"
+                    android:singleLine="true"
+                    android:layout_weight="2"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/editTextState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:hint="State"
+                    android:layout_weight="3"/>
+                <EditText
+                    android:id="@+id/editTextZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:inputType="number"
+                    android:hint="@string/edittext_zipcode"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:visibility="gone"
+                android:id="@+id/button6"
+                android:background="@color/myBlue"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:onClick="registerButtonClicked"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

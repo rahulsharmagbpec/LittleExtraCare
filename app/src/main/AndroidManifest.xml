@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="littleextracare.bifortis.com.activities" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--
+        The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.test.push.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/leclogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden" >
+        <activity
+            android:name=".LetsGoActivity"
+            android:label="@string/title_activity_lets_go"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <receiver
+            android:name="littleextracare.bifortis.com.receiver.GcmBroadCastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.emozia.researchapp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="littleextracare.bifortis.com.handler.GcmMessageHandler" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CareGiverSideMap"
+            android:label="@string/title_activity_care_giver_side_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name=".RegisterPhoneNumberActivity"
+            android:label="@string/title_activity_register_phone_number"
+            android:parentActivityName=".LetsGoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+        </activity>
+        <activity
+            android:name=".VerifyPhoneNumberActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".RegisterPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".VerifyPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+        </activity>
+        <activity
+            android:name=".PaymentMethodActivity"
+            android:label="@string/title_activity_payment_method"
+            android:parentActivityName=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <!--<activity
+            android:name=".BookMarksActivity"
+            android:label="@string/title_activity_book_marks"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="littleextracare.bifortis.com.activities.MainActivity" />
+        </activity>-->
+        <activity
+            android:name=".CustomerProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="littleextracare.bifortis.com.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TimerActivity"
+            android:label="@string/title_activity_timer"
+            android:parentActivityName=".TrackOnMap"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name=".TrackOnMap"
+            android:label="@string/title_activity_track_on_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity
+            android:name=".BookMarksProfile"
+            android:label="@string/title_activity_book_marks_profile"
+            android:parentActivityName=".BookMarksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            tools:ignore="UnusedAttribute" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="littleextracare.bifortis.com.activities.BookMarksActivity" />
+        </activity>-->
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FinalActivity"
+            android:label="@string/title_activity_final"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".RegisterActivityWithFacebook"
+            android:label="@string/title_activity_register_activity_with_facebook"
+            android:parentActivityName=".VerifyPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".PromoCodeActivity"
+            android:label="@string/title_activity_promo_code"
+            android:parentActivityName=".RegisterPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <!--<activity
+            android:name=".ActivityInviteFriends"
+            android:label="@string/title_activity_activity_invite_friends"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyTheme" >
+        </activity>-->
+        <activity
+            android:name=".EditPaymentActivity"
+            android:label="@string/title_activity_edit_payment" >
+        </activity>
+        <activity
+            android:name=".EditCustomerProfileActivity"
+            android:label="@string/title_activity_edit_customer_profile"
+            android:parentActivityName=".CustomerProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name=".CareGiverProfileActivity"
+            android:label="@string/title_activity_care_giver_profile"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name=".CompleteCareGiverProfile"
+            android:label="@string/title_activity_complete_care_giver_profile"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name=".PushNotificationClickedActivity"
+            android:label="@string/title_activity_push_notification_clicked"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+        <!--<activity
+            android:name=".TempMapsActivity"
+            android:label="@string/title_activity_temp_maps" >
+        </activity>-->
+        <activity
+            android:name=".UserSideMap"
+            android:label="@string/title_activity_user_side_map" >
+        </activity>
+    </application>
+
+</manifest>

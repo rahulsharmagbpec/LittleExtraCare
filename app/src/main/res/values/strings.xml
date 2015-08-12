@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_id">487279464772228</string>
+
+    <string name="app_name">LittleExtraCare</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_logout_text">Logout</string>
+    <string name="action_next">Next</string>
+    <string name="action_save">Save</string>
+
+    <!-- =================================Promo code Activity===================================== -->
+    <string name="promo_code_hint">Promo Code</string>
+
+    <!-- =================================Lets Go Activity===================================== -->
+    <string name="title_activity_lets_go">LEC</string>
+    <string name="lets_go_button">Get Started</string>
+
+    <!-- =============================Register Phone Activity================================== -->
+    <string name="button_next">Next</string>
+    <string name="button_caregiver">Have a promo code ?</string>
+    <string name="edittext_phoneNumber">Phone number</string>
+    <string name="edittext_otp">OTP</string>
+
+    <!-- =================================Login Activity======================================= -->
+    <string name="button_done">Verify</string>
+    <string name="button_finish">Finish</string>
+
+    <!-- =================================Register Activity==================================== -->
+    <string name="edittext_name">Name</string>
+    <string name="edittext_lastname">Last Name</string>
+    <string name="edittext_description">Description</string>
+    <string name="edittext_zipcode">Zip</string>
+    <string name="edittext_address">Address</string>
+    <string name="edittext_city">City</string>
+    <string name="register">Register</string>
+    <string name="button_facebook">Complete using Facebook</string>
+
+    <!-- ============================Customer Profile Activity================================= -->
+    <string name="edit">Edit</string>
+
+    <!-- ===================================Main Activity====================================== -->
+    <string name="Home">Home</string>
+    <string name="Profile">Caregivers</string>
+    <string name="Bookmarks">Booked Caregivers</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="careGiver">CareGiver</string>
+
+    <string name="child1">1 Child</string>
+    <string name="child2">2 Children</string>
+    <string name="child3">3+Children</string>
+
+    <string name="selectAddress">Select Date And Address</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="dialogText">Select Date And Address</string>
+    <string name="timeDialogError">"Book Max. to 10 days"</string>
+    <string name="minTimeDialogError">"Date is not valid."</string>
+    <string name="dialogNullError">Enter Date And Time.</string>
+
+    <!-- ===========================Care Giver Profile Activity =============================== -->
+    <string name="startBtn">Start</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_phone_number">Join</string>
+    <string name="title_activity_login">Verify Number</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_payment_method">Add Payment Method</string>
+
+    <string name="button_book">Book</string>
+    <string name="userName">Margaret White</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_accepted_profile">Profile</string>
+    <string name="title_activity_book_marks">BookMarks</string>
+    <string name="title_activity_user_profile">Profile</string>
+    <string name="title_activity_timer">TimerActivity</string>
+    <string name="title_activity_track_on_map">TrackOnMap</string>
+    <string name="title_activity_book_marks_profile">BookMarksProfile</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_final">FinalActivity</string>
+    <string name="title_activity_maps_activity2">Map</string>
+    <string name="title_activity_availability">AvailabilityActivity</string>
+    <string name="requesting">Requesting</string>
+
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="sun">SUN</string>
+
+    <string name="save">SAVE</string>
+
+    <string name="scheduled">Scheduled</string>
+    <string name="inbox">Inbox</string>
+    <string name="calendar">Calendar</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="availability">Availability</string>
+    <string name="schedule">Schedule Availability</string>
+    <string name="title_activity_inbox">InboxActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_register_activity_with_facebook">Register
+    </string>
+    <string name="title_activity_promo_code">Promo Code</string>
+
+    <string name="ok">OK</string>
+    <string name="booked_care_giver">You Booked Caregiver</string>
+    <string name="requesting_caregiver">Requesting Caregiver</string>
+    <string name="title_activity_activity_invite_friends">Invite Friends</string>
+    <string name="title_activity_edit_payment">Edit Payment</string>
+    <string name="title_activity_edit_customer_profile">Edit</string>
+    <string name="title_activity_care_giver_profile">CareGiverProfileActivity</string>
+    <string name="title_activity_complete_care_giver_profile">CompleteCareGiverProfile</string>
+    <string name="title_activity_push_notification_clicked"> </string>
+    <string name="title_activity_care_giver_side_map">CareGiverSideMap</string>
+    <string name="title_activity_temp_maps">Map</string>
+    <string name="title_activity_user_side_map">UserSideMap</string>
+</resources>

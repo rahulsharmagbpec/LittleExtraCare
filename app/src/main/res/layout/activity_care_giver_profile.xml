@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="littleextracare.bifortis.com.activities.CustomerProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="10dp"
+                android:id="@+id/careGiver_profile"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:src="@drawable/wallpaper"
+                app:border_width="2dp"
+                app:border_color="@color/myBlue"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Emily Rose"
+                android:id="@+id/care_giver_name"
+                android:layout_below="@+id/careGiver_profile"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textColor="@color/myBlue"
+                android:id="@+id/textviewDistance"
+                android:layout_below="@+id/care_giver_name"
+                android:layout_centerHorizontal="true" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/style_rating_bar"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="2.5"
+                android:layout_below="@+id/textviewDistance"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:id="@+id/SplitLine_hor4"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ratingBar"
+                android:layout_height= "2dp"
+                android:background="@color/myBlue" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon1"
+                    android:layout_weight="1"
+                    android:src="@drawable/heart_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon2"
+                    android:layout_weight="1"
+                    android:src="@drawable/edu_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon3"
+                    android:layout_weight="1"
+                    android:src="@drawable/finger_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon4"
+                    android:layout_weight="1"
+                    android:src="@drawable/car_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon5"
+                    android:layout_weight="1"
+                    android:src="@drawable/dog_gray"
+                    android:layout_below="@+id/scrollView3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+                android:id="@+id/textView9"
+                android:layout_margin="12dp"
+                android:layout_below="@+id/linearLayoutIcon"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startBtn"
+                android:textColor="@color/white"
+                android:background="@color/myBlue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/button16"
+                android:onClick="startButtonClicked"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView9" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="littleextracare.bifortis.com.activities.BookMarksProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="08:00 - 12:00"
+                android:gravity="center"
+                android:textColor="@color/myBlue"
+                android:id="@+id/textView12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Address goes here"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:minLines="3"
+                android:id="@+id/textView14" />
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textView14"
+                android:background="@color/myBlue" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_margin="5dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/wallpaper"
+                android:layout_gravity="center"
+                app:border_width="2dp"
+                app:border_color="@color/myBlue" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Margaret White"
+                android:id="@+id/textView15"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textView14"
+                android:background="@color/myBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon1"
+                    android:layout_weight="1"
+                    android:src="@drawable/heart_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon2"
+                    android:layout_weight="1"
+                    android:src="@drawable/edu_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon3"
+                    android:layout_weight="1"
+                    android:src="@drawable/finger_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon4"
+                    android:layout_weight="1"
+                    android:src="@drawable/car_gray"
+                    android:layout_below="@+id/scrollView3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIcon5"
+                    android:layout_weight="1"
+                    android:src="@drawable/dog_gray"
+                    android:layout_below="@+id/scrollView3" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                android:id="@+id/textView16"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="@color/myRed"
+        android:id="@+id/button15"
+        android:onClick="cancelButtonClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
